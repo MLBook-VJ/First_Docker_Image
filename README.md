@@ -34,7 +34,7 @@ We have created the docker image and pushed it to docker hub. To run the image f
    ```sh
     docker run -v $(pwd):/usr/src/app <username/img-name:tag> --filename $CSV_FILE
    ```
-   > The -v is used to mount a local directory as working directory which is __"/usr/src/app"__, inside the docker container. This way container can read the file from the machine where it is running and write it back, CSV_FILE is the file to be read and should be present in the current directory. For more reference on docker run options, refer below link:
+   > The -v is used to mount a local directory as working directory which is __"/usr/src/app"__, inside the docker container. This way container can read the file from the machine where it is running and write it back, CSV_FILE is the file to be read and should be present in the current working directory. For more reference on docker run options, refer below link:
    https://docs.docker.com/engine/reference/commandline/run/
 
 
